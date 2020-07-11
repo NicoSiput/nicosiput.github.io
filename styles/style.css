@@ -1,0 +1,191 @@
+@import "./myConfig.css";
+
+
+body {
+  font-family: Roboto;
+  background-color: #f0f0f0;
+}
+
+section {
+  margin-top: 15px !important;
+  color: #333;
+}
+
+section a {
+  color: #333;
+  font-weight: bold;
+}
+
+
+.home .club-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.position {
+  min-width: 30px;
+}
+
+.club-logo {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
+
+.club-logo-history {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+.homeTeam {
+  align-items: center;
+}
+
+.awayTeam {
+  align-items: center;
+}
+
+.list-standings table td:first-child {
+  min-width: 250px;
+}
+
+.container-history {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-header-history {
+  justify-content: space-between;
+}
+
+.list-upcoming .card {
+  max-height: 199px;
+}
+
+.list-upcoming .card-content {
+  position: relative;
+}
+
+.list-upcoming .card-content #link-detail-upcoming {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.list-history .card {
+  max-height: 190px;
+}
+
+.club-logo-upcoming {
+  height: 85px;
+  max-width: 100px;
+}
+
+span.badge {
+  margin-left: 0 !important;
+}
+
+#saveMatch,
+#deleteMatch {
+  cursor: pointer;
+}
+
+.collapsible .active #ic-collapse {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
+#ic-collapse {
+  width: 15px;
+  right: 15px;
+  transform: rotate(0);
+  transition: 0.2s;
+}
+
+#ic-delete {
+  width: 25px;
+  top: 5px;
+  right: 5px;
+}
+
+#image-ilustration {
+  max-width: 100%;
+}
+
+/* Error Page */
+.error-page img {
+  width: 100px;
+  height: 100px;
+}
+
+.error-page p {
+  font-size: 23px;
+  color: #333;
+  letter-spacing: 3px;
+}
+
+/* End Error Page */
+
+
+/* Loader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10001;
+}
+
+.loader-wrapper.loaded {
+  opacity: 0%;
+  z-index: -10;
+  transition: 0.3s;
+}
+
+.header-musim {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.collapsible-body {
+  padding: 7px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mid-text {
+    font-size: 32px;
+  }
+
+  #image-ilustration {
+    max-width: 50%;
+  }
+
+  .position-1 {
+    order: 2;
+  }
+
+  .position-2 {
+    order: 1;
+    margin-top: 50px;
+  }
+
+  .position-3 {
+    order: 3;
+    margin-top: 50px;
+  }
+
+  .legend-position {
+    padding-left: 15px !important;
+  }
+
+  .collapsible-body {
+    padding: 2rem;
+  }
+}

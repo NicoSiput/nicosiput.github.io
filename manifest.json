@@ -1,0 +1,37 @@
+{
+    "name": "Nico League",
+    "short_name": "Nico League",
+    "description": "Aplikasi PWA Dicoding Submission 2",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#424242",
+    "icons": [{
+            "src": "./images/icons/icon128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/icon192ios.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/icon192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/icon256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/icon512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+
+    "gcm_sender_id": "556479813026"
+}

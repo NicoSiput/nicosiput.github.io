@@ -1,0 +1,159 @@
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <h5>Detail Match</h5>
+            <div class="row">
+                <div class="detail-match">
+                    <!-- card upcoming akan tampil disini -->
+
+                    <!-- Card h2h -->
+                    <div class="col m6 s12">
+                        <div class="card">
+                            <div class="card-content">
+                                Head to Head
+                            </div>
+
+                            <div class="card-action">
+                                <div class="container-history mt-2">
+                                    <div class="flex">
+                                        <div class="homeTeam center basis-1">
+                                            <img class="club-logo-upcoming mr-1" src="./images/logo-not-found.svg"
+                                                alt="${history.homeTeam.name}">
+                                            <p id="match-home-name">{Team Name}</p>
+                                        </div>
+
+                                        <div class="winrate basis-1">
+                                            <div class="win flex my-2">
+                                                <span class="badge green white-text rounded-4 mr-3">Win</span>
+                                                <span id="h2h-win-home">{win}</span>
+                                            </div>
+                                            <div class="draw flex my-2">
+                                                <span class="badge grey white-text rounded-4 mr-3">Draw</span>
+                                                <span id="h2h-draw-home">{draw}</span>
+                                            </div>
+                                            <div class="lose flex my-2">
+                                                <span class="badge red white-text rounded-4 mr-3">lose</span>
+                                                <span id="h2h-lose-home">{lose}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider my-2">
+                                    </div>
+                                    <div class="flex">
+                                        <div class="awayTeam center basis-1">
+                                            <img class="club-logo-upcoming mr-1" src="./images/logo-not-found.svg"
+                                                alt="${history.awayTeam.name}">
+                                            <p id="match-away-name">{Team Name}</p>
+                                        </div>
+
+                                        <div class="winrate basis-1">
+                                            <div class="win flex my-2">
+                                                <span class="badge green white-text rounded-4 mr-3">Win</span>
+                                                <span id="h2h-win-away">{win}</span>
+                                            </div>
+                                            <div class="draw flex my-2">
+                                                <span class="badge grey white-text rounded-4 mr-3">Draw</span>
+                                                <span id="h2h-draw-away">{draw}</span>
+                                            </div>
+                                            <div class="lose flex my-2">
+                                                <span class="badge red white-text rounded-4 mr-3">lose</span>
+                                                <span id="h2h-lose-away">{home}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="win flex my-2">
+                                        <span class="badge mr-3">Number of Match</span>
+                                        <span id="h2h-nom">{Number of Match}</span>
+                                    </div>
+                                    <div class="win flex my-2">
+                                        <span class="badge mr-3">Total Goals</span>
+                                        <span id="h2h-total-goals">{total goals}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col m6 s12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="header-history">
+                                    <div class="sub-header-history flex mb-1">
+                                        <div class="date flex">
+                                            <i class="material-icons mr-2">date_range</i>
+                                            <p id="match-date">{Date Match}</p>
+                                        </div>
+
+                                        <div class="time flex">
+                                            <i class="material-icons ml-2 mr-2">access_time</i>
+                                            <p id="match-time">{Time Match}</p>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                </div>
+                                <div class="content-match">
+                                    <div class="mt-2 blue lighten-5 p-1">
+                                        <div class="info-item flex align-item-center justify-content-center">
+                                            <img src="./images/icons/ic_venue.svg" height="30px">
+                                            <span class="ml-3" id="match-venue">{Venue}</span>
+                                        </div>
+                                    </div>
+                                    <div class="content flex align-item-center mt-2">
+                                        <div class="homeTeam center basis-1">
+                                            <img class="club-logo-upcoming mr-1" src="./images/logo-not-found.svg"
+                                                alt="logo-team">
+                                            <p id="match-home-name">{Team Name}</p>
+                                        </div>
+                                        <div class="mid">
+                                            VS
+                                        </div>
+                                        <div class="awayTeam center basis-1">
+                                            <img class="club-logo-upcoming mr-1" src="./images/logo-not-found.svg"
+                                                alt="logo-team">
+                                            <p id="match-away-name">{Team Name}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 ml-auto">
+                    <a id="saveMatch">
+                        <div class="green p-3 rounded-6 flex align-item-center justify-content-around" id="reminder">
+
+                            <div class="icon">
+                                <img src="./images/icons/ic_bell.png" height="50px" alt="bell remind me">
+                            </div>
+                            <div class="content white-text center">
+                                <h6 style="letter-spacing: 1px;" class="text-bold">Don't miss your match</h6>
+                                <h6 style="letter-spacing: 1px;" class="text-bold">Remind me !</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="deleteMatch">
+                        <div class="red p-3 rounded-6 flex align-item-center justify-content-around" id="reminder">
+
+                            <div class="icon">
+                                <img src="./images/icons/ic_times.png" height="50px" alt="bell remind me">
+                            </div>
+                            <div class="content white-text center">
+                                <h6 style="" class="text-bold">You have set a reminder on this match
+                                </h6>
+                                <h6 style="" class="text-bold">Cancel this reminder</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
